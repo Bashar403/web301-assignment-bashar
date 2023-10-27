@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+.main {
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+form {
+    margin: 40px;
+}
+
+.form-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.form-check {
+    margin-bottom: 20px;
+}
+
+label, input[type="text"], input[type="email"], input[type="tel"], textarea {
+    flex: 1;
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="checkbox"] {
+    margin-top: 10px;
+}
+
+input[type="submit"] {
+    padding: 10px 20px;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #555;
+}
+
+/* Tablet and Desktop */
+@media screen and (min-width: 601px) {
+    body {
+        background-color: #e9ecef;
+    }
+    .form-row label {
+        flex: 0 0 200px;
+        
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 600px) {
+    body {
+        background-color: #a5a9ac;
+    }
+    .form-row {
+        flex-direction: column;
+    }
+    label {
+        font-size: 20px; /* Increase the font size for labels */
+    }
+    input[type="text"], input[type="email"], input[type="tel"], textarea {
+        font-size: 13px;
+        padding: 12px; 
+        border-radius: 8px; 
+        border: 2px solid #ccc;
+    }
+}
