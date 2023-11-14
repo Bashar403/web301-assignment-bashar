@@ -3,39 +3,368 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Web Form</title>
-    <link rel="stylesheet" href="style/styles.css">
+    <title>Bashar's Egyptian Adventures</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1>Bashar Matar</h1>
-    </header>
-    <div class="main">
-    <form action="#" method="post">
-        <div class="form-row">
-            <label for="fullName">Full Name</label>
-            <input type="text" id="fullName" name="fullName" required>
+    <div class="bg-primary d-none d-lg-block py-3">
+        <header class="bg-primary text-white text-center py-3">
+            <h1>Bashar's Egyptian Adventures</h1>
+        </header>
+        
+        <div class="container my-5">
+            <!-- Rows with 3 Columns Each -->
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <div class="card-header bg-success">
+                            <h3>Cairo</h3>
+                        </div>
+                        <div class="card-body">
+                            <p>Capital of Egypt, known for its rich history and the Great Pyramids of Giza.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <div class="card-header bg-warning">
+                            <h3>Luxor</h3>
+                        </div>
+                        <div class="card-body">
+                            <p>Often called the world's greatest open-air museum, Luxor offers access to ancient Pharaonic history.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <div class="card-header bg-info">
+                            <h3>Alexandria</h3>
+                        </div>
+                        <div class="card-body">
+                            <p>The Pearl of the Mediterranean, famous for its historic library and beautiful beaches.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <div class="card-header bg-danger">
+                            <h3>Aswan</h3>
+                        </div>
+                        <div class="card-body">
+                            <p>A city of significant archaeological sites and the gateway to the temples of Philae.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <div class="card-header bg-secondary">
+                            <h3>Sharm El-Sheikh</h3>
+                        </div>
+                        <div class="card-body">
+                            <p>A city known for its clear waters, coral reefs, and luxury resorts. A perfect destination for diving enthusiasts.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <div class="card-header bg-dark text-white">
+                            <h3>Hurghada</h3>
+                        </div>
+                        <div class="card-body">
+                            <p>Renowned for its diving opportunities, Hurghada is a leading coastal resort on the Red Sea.</p>
+                            <button class="btn btn-primary" data-toggle="modal" data-target="#myModal">Read More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Additional 2 Columns with Spacing -->
+            <div class="row mt-4">
+                <div class="col-md-6">
+                    <div class="card mb-4">
+                        <div class="card-header bg-light">
+                            <h3>Local Cuisine</h3>
+                        </div>
+                        <div class="card-body">
+                            <p>Experience the rich flavors of Egyptian cuisine, from traditional Koshari to delicious Shawarma.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card mb-4">
+                        <div class="card-header bg-light">
+                            <h3>Cultural Experiences</h3>
+                        </div>
+                        <div class="card-body">
+                            <p>Engage with Egypt's vibrant culture through music, dance, and historical exploration.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="form-row">
-            <label for="email">Email Address</label>
-            <input type="email" id="email" name="email" required>
+        
+        <!-- Modal for Hurghada -->
+        <div class="modal fade" id="myModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Hurghada</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Renowned for its diving opportunities, Hurghada is a leading coastal resort on the Red Sea.</p>
+                        <p>If you want to know more about Hurghada, you can provide additional details here.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="form-row">
-            <label for="phoneNumber">Phone Number</label>
-            <input type="tel" id="phoneNumber" name="phoneNumber" required>
+    </div>
+    <div class="bg-secondary d-none d-md-block d-lg-none py-3">
+        <header class="bg-primary text-white text-center py-3">
+            <h1>Bashar's Egyptian Adventures</h1>
+        </header>
+        
+        <div class="container my-5">
+            <!-- Rows with 3 Columns Each -->
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <div class="card-header bg-success">
+                            <h3>Cairo</h3>
+                        </div>
+                        <div class="card-body">
+                            <p>Capital of Egypt, known for its rich history and the Great Pyramids of Giza.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <div class="card-header bg-warning">
+                            <h3>Luxor</h3>
+                        </div>
+                        <div class="card-body">
+                            <p>Often called the world's greatest open-air museum, Luxor offers access to ancient Pharaonic history.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <div class="card-header bg-info">
+                            <h3>Alexandria</h3>
+                        </div>
+                        <div class="card-body">
+                            <p>The Pearl of the Mediterranean, famous for its historic library and beautiful beaches.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <div class="card-header bg-danger">
+                            <h3>Aswan</h3>
+                        </div>
+                        <div class="card-body">
+                            <p>A city of significant archaeological sites and the gateway to the temples of Philae.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <div class="card-header bg-secondary">
+                            <h3>Sharm El-Sheikh</h3>
+                        </div>
+                        <div class="card-body">
+                            <p>A city known for its clear waters, coral reefs, and luxury resorts. A perfect destination for diving enthusiasts.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <div class="card-header bg-dark text-white">
+                            <h3>Hurghada</h3>
+                        </div>
+                        <div class="card-body">
+                            <p>Renowned for its diving opportunities, Hurghada is a leading coastal resort on the Red Sea.</p>
+                            <button class="btn btn-primary" data-toggle="modal" data-target="#myModal">Read More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Additional 2 Columns with Spacing -->
+            <div class="row mt-4">
+                <div class="col-md-6">
+                    <div class="card mb-4">
+                        <div class="card-header bg-light">
+                            <h3>Local Cuisine</h3>
+                        </div>
+                        <div class="card-body">
+                            <p>Experience the rich flavors of Egyptian cuisine, from traditional Koshari to delicious Shawarma.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card mb-4">
+                        <div class="card-header bg-light">
+                            <h3>Cultural Experiences</h3>
+                        </div>
+                        <div class="card-body">
+                            <p>Engage with Egypt's vibrant culture through music, dance, and historical exploration.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="form-row">
-            <label for="message">Message</label>
-            <textarea id="message" name="message"></textarea>
+        
+        <!-- Modal for Hurghada -->
+        <div class="modal fade" id="myModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Hurghada</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Renowned for its diving opportunities, Hurghada is a leading coastal resort on the Red Sea.</p>
+                        <p>If you want to know more about Hurghada, you can provide additional details here.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="form-check">
-            <label for="checkbox">Yes/No</label>
-            <input type="checkbox" id="checkbox" name="checkbox">
+    </div>
+    <div class="bg-light d-block d-md-none py-3">
+        <header class="bg-primary text-white text-center py-3">
+            <h1>Bashar's Egyptian Adventures</h1>
+        </header>
+        
+        <div class="container my-5">
+            <!-- Rows with 3 Columns Each -->
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <div class="card-header bg-success">
+                            <h3>Cairo</h3>
+                        </div>
+                        <div class="card-body">
+                            <p>Capital of Egypt, known for its rich history and the Great Pyramids of Giza.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <div class="card-header bg-warning">
+                            <h3>Luxor</h3>
+                        </div>
+                        <div class="card-body">
+                            <p>Often called the world's greatest open-air museum, Luxor offers access to ancient Pharaonic history.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <div class="card-header bg-info">
+                            <h3>Alexandria</h3>
+                        </div>
+                        <div class="card-body">
+                            <p>The Pearl of the Mediterranean, famous for its historic library and beautiful beaches.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <div class="card-header bg-danger">
+                            <h3>Aswan</h3>
+                        </div>
+                        <div class="card-body">
+                            <p>A city of significant archaeological sites and the gateway to the temples of Philae.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <div class="card-header bg-secondary">
+                            <h3>Sharm El-Sheikh</h3>
+                        </div>
+                        <div class="card-body">
+                            <p>A city known for its clear waters, coral reefs, and luxury resorts. A perfect destination for diving enthusiasts.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <div class="card-header bg-dark text-white">
+                            <h3>Hurghada</h3>
+                        </div>
+                        <div class="card-body">
+                            <p>Renowned for its diving opportunities, Hurghada is a leading coastal resort on the Red Sea.</p>
+                            <button class="btn btn-primary" data-toggle="modal" data-target="#myModal">Read More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Additional 2 Columns with Spacing -->
+            <div class="row mt-4">
+                <div class="col-md-6">
+                    <div class="card mb-4">
+                        <div class="card-header bg-light">
+                            <h3>Local Cuisine</h3>
+                        </div>
+                        <div class="card-body">
+                            <p>Experience the rich flavors of Egyptian cuisine, from traditional Koshari to delicious Shawarma.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card mb-4">
+                        <div class="card-header bg-light">
+                            <h3>Cultural Experiences</h3>
+                        </div>
+                        <div class="card-body">
+                            <p>Engage with Egypt's vibrant culture through music, dance, and historical exploration.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="form-row">
-            <input type="submit" value="Submit">
+        
+        <!-- Modal for Hurghada -->
+        <div class="modal fade" id="myModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Hurghada</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Renowned for its diving opportunities, Hurghada is a leading coastal resort on the Red Sea.</p>
+                        <p>If you want to know more about Hurghada, you can provide additional details here.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
         </div>
-    </form>
-</div>
+    </div>
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.6/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
