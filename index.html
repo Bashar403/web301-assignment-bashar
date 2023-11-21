@@ -2,40 +2,111 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Web Form</title>
-    <link rel="stylesheet" href="style/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Bashar's Candle Shop</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
 </head>
-<body>
-    <header>
-        <h1>Bashar Matar</h1>
-    </header>
-    <div class="main">
-    <form action="#" method="post">
-        <div class="form-row">
-            <label for="fullName">Full Name</label>
-            <input type="text" id="fullName" name="fullName" required>
+<body data-spy="scroll" data-target="#navbar" data-offset="50">
+
+<!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light" id="navbar">
+    <a class="navbar-brand" href="#">Bashar's Candle Shop</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-end">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#products">Products</a>
+            </li>
+            <!-- Dropdown Menu -->
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Services
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Custom Candles</a>
+                    <a class="dropdown-item" href="#">Workshops</a>
+                </div>
+            </li>
+            <!-- Search Bar -->
+            <li class="nav-item">
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Header Section -->
+<header class="bg-primary text-white text-center py-5">
+    <h1>Bashar's Candle Shop</h1>
+</header>
+
+<!-- About Section -->
+<section id="about" class="container my-5">
+    <div class="row">
+        <div class="col-lg-6">
+            <h2>About Us</h2>
+            <p>Welcome to Bashar's Candle Shop, your source for high-quality handcrafted candles in Windsor, Ontario. We take pride in creating unique and aromatic candles that brighten up your space.</p>
         </div>
-        <div class="form-row">
-            <label for="email">Email Address</label>
-            <input type="email" id="email" name="email" required>
+        <div class="col-lg-6">
+            <h2>Our Mission</h2>
+            <p>At Bashar's Candle Shop, our mission is to bring warmth and joy to your life through our carefully crafted candles. We use premium ingredients to ensure a delightful and long-lasting candle experience.</p>
         </div>
-        <div class="form-row">
-            <label for="phoneNumber">Phone Number</label>
-            <input type="tel" id="phoneNumber" name="phoneNumber" required>
+    </div>
+</section>
+
+<!-- Products Section -->
+<section id="products" class="container my-5">
+    <h2 class="text-center mb-4">Featured Products</h2>
+    <div class="row">
+        <div class="col-lg-4 mb-4">
+            <div class="card">
+                <img src="/imgs/EKSW05-L_1.webp" class="card-img-top" alt="Product 1">
+                <div class="card-body">
+                    <h5 class="card-title">Aromatic Lavender Candle</h5>
+                    <p class="card-text">Experience the soothing aroma of lavender with our hand-poured candle. Perfect for relaxation and stress relief.</p>
+                    <button class="btn btn-primary">Add to Cart</button>
+                </div>
+            </div>
         </div>
-        <div class="form-row">
-            <label for="message">Message</label>
-            <textarea id="message" name="message"></textarea>
+        <div class="col-lg-4 mb-4">
+            <div class="card">
+                <img src="/imgs/madagascar-vanilla-3-wick-600x600-optimized.webp" class="card-img-top" alt="Product 2">
+                <div class="card-body">
+                    <h5 class="card-title">Vanilla Bean Delight</h5>
+                    <p class="card-text">Indulge in the sweet, comforting and most beutiful scent of vanilla with our Vanilla Bean Delight candle.</p>
+                    <button class="btn btn-primary">Add to Cart</button>
+                </div>
+            </div>
         </div>
-        <div class="form-check">
-            <label for="checkbox">Yes/No</label>
-            <input type="checkbox" id="checkbox" name="checkbox">
+        <div class="col-lg-4 mb-4">
+            <div class="card">
+                <img src="/imgs/s-l1600.jpg" class="card-img-top" alt="Product 3">
+                <div class="card-body">
+                    <h5 class="card-title">Sandalwood Serenity</h5>
+                    <p class="card-text">Immerse yourself in the calming ambiance of sandalwood with our Sandalwood Serenity candle.</p>
+                    <button class="btn btn-primary">Add to Cart</button>
+                </div>
+            </div>
         </div>
-        <div class="form-row">
-            <input type="submit" value="Submit">
-        </div>
-    </form>
-</div>
+    </div>
+</section>
+
+<!-- Bootstrap JS and Popper.js -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </body>
 </html>
