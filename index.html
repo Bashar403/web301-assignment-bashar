@@ -1,41 +1,99 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Web Form</title>
-    <link rel="stylesheet" href="style/styles.css">
+    <title>Bashar Laptop Store</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-    <header>
-        <h1>Bashar Matar</h1>
-    </header>
-    <div class="main">
-    <form action="#" method="post">
-        <div class="form-row">
-            <label for="fullName">Full Name</label>
-            <input type="text" id="fullName" name="fullName" required>
-        </div>
-        <div class="form-row">
-            <label for="email">Email Address</label>
-            <input type="email" id="email" name="email" required>
-        </div>
-        <div class="form-row">
-            <label for="phoneNumber">Phone Number</label>
-            <input type="tel" id="phoneNumber" name="phoneNumber" required>
-        </div>
-        <div class="form-row">
-            <label for="message">Message</label>
-            <textarea id="message" name="message"></textarea>
-        </div>
-        <div class="form-check">
-            <label for="checkbox">Yes/No</label>
-            <input type="checkbox" id="checkbox" name="checkbox">
-        </div>
-        <div class="form-row">
-            <input type="submit" value="Submit">
-        </div>
-    </form>
-</div>
+
+    <!-- Header -->
+    <div class="container">
+        <header class="text-center mt-3">
+            <h1>Bashar</h1>
+        </header>
+    </div>
+
+    <!-- Form (for small devices, it will be on top) -->
+    <div class="container mt-3 d-md-none">
+        <form>
+            <div class="form-group">
+                <label for="productName">Product Name</label>
+                <select class="form-control" id="productName">
+                    
+                    <option>UltraBook Pro X1</option>
+                        <option>GamerMax Elite 7</option>
+                        <option>SlimPort Air 2023</option>
+                </select>
+            </div>
+            <div class="form-group form-check">
+                <input type="checkbox" class="form-check-input" id="orderCheck">
+                <label class="form-check-label" for="orderCheck">Would you like to order?</label>
+            </div>
+            <div class="form-group">
+                <label for="quantityRange">Quantity</label>
+                <input type="range" class="form-control-range" id="quantityRange">
+            </div>
+        </form>
+    </div>
+
+    <!-- Image -->
+    <div class="container mt-3">
+        <img src="/imgs/Laptop.jpg" class="img-fluid" alt="Laptop">
+        <p class="caption">Latest Model Laptop - Perfect for Work and Play</p>
+    </div>
+
+    <!-- Table -->
+    <div class="container mt-3">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Product Name</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>UltraBook Pro X1</td>
+                    <td>$1200</td>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <td>GamerMax Elite 7</td>
+                    <td>$1500</td>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <td>SlimPort Air 2023</td>
+                    <td>$1000</td>
+                    <td>20</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Form (for larger devices) -->
+    <div class="container mt-3 d-none d-md-block">
+        <form>
+            <div class="form-group">
+                <label for="productNameDesktop">Product Name</label>
+                <select class="form-control" id="productNameDesktop">
+                    <option>UltraBook Pro X1</option>
+                        <option>GamerMax Elite 7</option>
+                        <option>SlimPort Air 2023</option>
+                </select>
+            </div>
+            <div class="form-group form-check">
+                <input type="checkbox" class="form-check-input" id="orderCheckDesktop">
+                <label class="form-check-label" for="orderCheckDesktop">Would you like to order?</label>
+            </div>
+            <div class="form-group">
+                <label for="quantityRangeDesktop">Quantity</label>
+                <input type="range" class="form-control-range" id="quantityRangeDesktop">
+            </div>
+        </form>
+    </div>
+
 </body>
 </html>
